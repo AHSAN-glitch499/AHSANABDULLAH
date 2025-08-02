@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Registration Form</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form action="/submit" method="post">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <!-- Country -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="pakistan">Pakistan</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+    </select><br><br>
+
+    <!-- Message -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="Write something..."></textarea><br><br>
+
+    <!-- Submit and Reset Buttons -->
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+
+  </form>
+
+</body>
+</html>
+
+
+
